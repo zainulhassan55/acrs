@@ -1,20 +1,39 @@
+import { useEffect } from 'react'
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Layout } from './components/Layout'
+import { AboutPage } from './pages/AboutPage'
+import { ConferencesPage } from './pages/ConferencesPage'
+import { ContactPage } from './pages/ContactPage'
+import { FellowPage } from './pages/FellowPage'
+import { HomePage } from './pages/HomePage'
+import { MembershipPage } from './pages/MembershipPage'
+import { StudentsPage } from './pages/StudentsPage'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="rounded-xl bg-white p-10 shadow-lg">
-        <h1 className="text-4xl font-bold text-blue-600">
-          React + TypeScript + Tailwind
-        </h1>
-
-        <p className="mt-4 text-gray-600">
-          Our new project is working successfully.
-        </p>
-
-        <button className="mt-6 rounded-lg bg-blue-600 px-5 py-2 text-white hover:bg-blue-700">
-          Get Started
-        </button>
-      </div>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/students" element={<StudentsPage />} />
+          <Route path="/fellow" element={<FellowPage />} />
+          <Route path="/membership" element={<MembershipPage />} />
+          <Route path="/conferences" element={<ConferencesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
