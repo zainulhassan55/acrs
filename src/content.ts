@@ -2,8 +2,6 @@ export const society = {
   shortName: 'ACRS',
   name: 'AI & Cybersecurity Research Society',
   fullTitle: 'AI & Cybersecurity Research Society (ACRS)',
-  motto: 'सा विद्या या विमुक्तये',
-  mottoMeaning: 'Knowledge which liberates',
   hq: 'New Delhi, India',
   address: 'AI & Cybersecurity Research Society, New Delhi 110068, India',
   emails: ['contact@acrs.in'],
@@ -12,7 +10,7 @@ export const society = {
 export const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/students', label: 'Student Chapter' },
+  { to: '/students', label: 'Students Chapter' },
   { to: '/fellow', label: 'ACRS Fellow' },
   { to: '/membership', label: 'Join ACRS' },
   { to: '/conferences', label: 'Conferences' },

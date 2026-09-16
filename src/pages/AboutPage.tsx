@@ -1,5 +1,4 @@
 import { PageHero } from '../components/Layout'
-import { society } from '../content'
 import { publicUrl } from '../publicUrl'
 
 export function AboutPage() {
@@ -71,11 +70,6 @@ export function AboutPage() {
               </ul>
             </div>
           </div>
-          <p className="mt-8 font-serif text-3xl text-gold">{society.motto}</p>
-          <p className="mt-2 text-lg text-fog/65">
-            The motto of the society is taken from the Vishnu Purana. It means “knowledge which
-            liberates”.
-          </p>
         </article>
 
         <article className="mt-8 rounded-[2rem] border border-line p-10">

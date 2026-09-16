@@ -93,8 +93,6 @@ export function Layout() {
               A non-profit scientific society for researchers, students, and industry professionals
               working in artificial intelligence, cybersecurity, and allied areas.
             </p>
-            <p className="mt-6 font-serif text-2xl text-gold">{society.motto}</p>
-            <p className="mt-1 text-base text-fog/55">{society.mottoMeaning}</p>
           </div>
           <div>
             <p className="kicker">Explore</p>
