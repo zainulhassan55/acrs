@@ -1,5 +1,6 @@
 import { PageHero } from '../components/Layout'
 import { society } from '../content'
+import { publicUrl } from '../publicUrl'
 
 export function AboutPage() {
   return (
@@ -44,7 +45,7 @@ export function AboutPage() {
           <h2 className="headline text-4xl text-white">About the logo</h2>
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-[220px_1fr]">
             <img
-              src="/logo.png"
+              src={publicUrl('logo.png')}
               alt="ACRS emblem"
               className="mx-auto h-44 w-44 rounded-[2rem] object-cover shadow-[0_20px_50px_rgba(62,224,208,0.2)]"
             />

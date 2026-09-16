@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { heroSlides } from '../content'
+import { publicUrl } from '../publicUrl'
 
 export function HeroBackdrop({ children }: { children: ReactNode }) {
   const [index, setIndex] = useState(0)
@@ -18,7 +19,7 @@ export function HeroBackdrop({ children }: { children: ReactNode }) {
       {heroSlides.map((item, i) => (
         <img
           key={`${item.src}-${i}`}
-          src={`${item.src}?v=2`}
+          src={publicUrl(item.src)}
           alt=""
           className={`hero-photo absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
             i === index ? 'is-active opacity-100' : 'opacity-0'

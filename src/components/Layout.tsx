@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { Logo } from './Logo'
 import { nav, society } from '../content'
+import { publicUrl } from '../publicUrl'
 
 export function Layout() {
   const [open, setOpen] = useState(false)
@@ -135,7 +136,7 @@ export function PageHero({
       {image ? (
         <>
           <img
-            src={`${image}?v=2`}
+            src={publicUrl(image)}
             alt=""
             className="hero-photo absolute inset-0 h-full w-full object-cover"
           />

@@ -29,21 +29,21 @@ export const membershipPlans = [
 
 export const heroSlides = [
   {
-    src: '/images/hero-ai-cyber.png',
+    src: 'images/hero-ai-cyber.png',
     title: 'Trustworthy AI',
     text: 'Research that makes intelligent systems reliable, explainable, and safe.',
     to: '/about',
     label: 'About ACRS',
   },
   {
-    src: '/images/hero-secure-ai.png',
+    src: 'images/hero-secure-ai.png',
     title: 'Secure intelligence',
     text: 'Campus chapters training the next generation in AI and cyber defence.',
     to: '/students',
     label: 'Students Chapter',
   },
   {
-    src: '/images/hero-defence.png',
+    src: 'images/hero-defence.png',
     title: 'Cyber resilience',
     text: 'Conferences and fellowships for people defending digital society.',
     to: '/conferences',
