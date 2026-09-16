@@ -12,7 +12,7 @@ export const society = {
 export const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/students', label: 'Students Chapter' },
+  { to: '/students', label: 'Student Chapter' },
   { to: '/fellow', label: 'ACRS Fellow' },
   { to: '/membership', label: 'Join ACRS' },
   { to: '/conferences', label: 'Conferences' },
