@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/Layout'
+import { society } from '../content'
 
 const guidelines = [
-  'Engineering colleges, polytechnic institutions, and universities are eligible to establish a student chapter for programmes such as B.Tech / M.Tech / BCA / MCA / B.Sc. (Computer Science) / M.Sc. (Computer Science), and related AI, data science, or cybersecurity programmes.',
+  'Universities and colleges are eligible to establish a student chapter for programmes such as Bachelor’s / Master’s degrees in Computer Science, Artificial Intelligence, Data Science, Cybersecurity, and related fields.',
   'For each student chapter, there must be one faculty adviser who will be a single point of contact (SPOC). The department will initiate the request to establish the student chapter with the name of a faculty adviser.',
   'ACRS authorities will approve the request for student chapter establishment after verification.',
   'The SPOC will coordinate the registration of all students of the programme or course for which the chapter is being established.',
@@ -43,7 +44,7 @@ export function StudentsPage() {
       <PageHero
         kicker="Campus programme"
         title="ACRS Students’ Chapter"
-        subtitle="A collaborative programme for engineering colleges, polytechnics, and universities to teach artificial intelligence, cybersecurity, and secure computing — and to bridge academia with industry."
+        subtitle="A collaborative programme for universities and colleges to teach artificial intelligence, cybersecurity, and secure computing — and to bridge academia with industry."
         image="/images/hero-secure-ai.png"
       />
 
@@ -62,8 +63,8 @@ export function StudentsPage() {
           </ol>
           <p className="mt-8 text-lg text-fog/75">
             To start a students’ chapter, write to{' '}
-            <a className="text-mint" href="mailto:contact@acrs.in">
-              contact@acrs.in
+            <a className="text-mint" href={`mailto:${society.emails[0]}`}>
+              {society.emails[0]}
             </a>
             .
           </p>
@@ -98,7 +99,7 @@ export function StudentsPage() {
             <li>
               Departments may organize academic events under the student chapter. Information about
               these events will be shared with ACRS members and published on the website. At the
-              end of each year, a best chapter award will be presented at the national level.
+              end of each year, a best chapter award will be presented.
             </li>
             <li>
               An e-certificate will be issued reflecting the establishment of the student chapter

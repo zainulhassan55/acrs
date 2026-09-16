@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/Layout'
+import { society } from '../content'
 
 export function FellowPage() {
   return (
@@ -121,8 +122,8 @@ export function FellowPage() {
           </p>
           <p className="mt-5 text-lg leading-8 text-fog/80">
             If you believe you are eligible, share your detailed CV at{' '}
-            <a className="text-mint" href="mailto:contact@acrs.in">
-              contact@acrs.in
+            <a className="text-mint" href={`mailto:${society.emails[0]}`}>
+              {society.emails[0]}
             </a>
             .
           </p>

@@ -106,8 +106,10 @@ export function Layout() {
           </div>
           <div>
             <p className="kicker">Contact us</p>
-            <p className="mt-5 text-lg leading-8 text-fog/75">{society.address}</p>
+            <p className="mt-5 text-lg leading-8 text-fog/75">{society.lab}</p>
+            <p className="mt-3 text-lg leading-8 text-fog/75">{society.address}</p>
             <p className="mt-4 text-xl text-mint">{society.emails[0]}</p>
+            <p className="mt-2 text-lg text-fog/75">{society.phone}</p>
           </div>
         </div>
         <div className="border-t border-line py-6 text-center text-sm text-fog/45">

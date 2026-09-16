@@ -103,9 +103,8 @@ export function HomePage() {
               ACRS Students’ Chapter
             </h2>
             <p className="mt-6 text-xl leading-9 text-fog/80">
-              The Students’ Chapter helps engineering colleges, polytechnics, and universities
-              teach AI, machine learning, cybersecurity, and secure computing — and connect
-              classrooms with industry practice.
+              The Students’ Chapter helps universities and colleges teach AI, machine learning,
+              cybersecurity, and secure computing — and connect classrooms with industry practice.
             </p>
             <Link to="/students" className="mt-8 inline-flex text-lg font-semibold text-mint">
               Chapter guidelines →

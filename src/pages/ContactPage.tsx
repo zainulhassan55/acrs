@@ -25,11 +25,14 @@ export function ContactPage() {
       <section className="mx-auto grid max-w-7xl gap-8 px-5 py-20 lg:grid-cols-2">
         <article className="glass rounded-[2rem] p-10">
           <h2 className="headline text-4xl text-white">Contact address</h2>
-          <p className="mt-6 text-xl leading-9 text-fog/80">{society.address}</p>
+          <p className="mt-6 text-xl leading-9 text-fog/80">{society.lab}</p>
+          <p className="mt-3 text-xl leading-9 text-fog/80">{society.address}</p>
           <p className="mt-8 text-base tracking-[0.18em] text-fog/55 uppercase">Email</p>
           <a className="mt-2 block text-2xl text-mint" href={`mailto:${society.emails[0]}`}>
             {society.emails[0]}
           </a>
+          <p className="mt-8 text-base tracking-[0.18em] text-fog/55 uppercase">Phone</p>
+          <p className="mt-2 text-2xl text-white">{society.phone}</p>
           <p className="mt-8 text-lg leading-8 text-fog/75">
             Headquarters: {society.hq}. For conference-related involvement, please visit the
             conferences page or include the event name in your message.

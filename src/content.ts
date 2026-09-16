@@ -2,9 +2,12 @@ export const society = {
   shortName: 'ACRS',
   name: 'AI & Cybersecurity Research Society',
   fullTitle: 'AI & Cybersecurity Research Society (ACRS)',
-  hq: 'New Delhi, India',
-  address: 'AI & Cybersecurity Research Society, New Delhi 110068, India',
-  emails: ['contact@acrs.in'],
+  hq: 'Taichung, Taiwan',
+  lab: 'International Center for AI and Cyber Security Research and Innovations (CCRI), Asia University',
+  address:
+    'CCRI, Asia University, No. 500, Lioufeng Rd., Wufeng Dist., Taichung City 41354, Taiwan',
+  emails: ['director-ccri@asia.edu.tw'],
+  phone: '+886-4-2332-3456',
 }
 
 export const nav = [
@@ -18,11 +21,21 @@ export const nav = [
 ]
 
 export const membershipPlans = [
-  { duration: 'Annual', fee: 'INR 1,500/-', note: 'Collaborator' },
-  { duration: 'Long Term (3 years)', fee: 'INR 4,000/-', note: 'Collaborator' },
-  { duration: 'Long Term (5 years)', fee: 'INR 6,000/-', note: 'Collaborator' },
-  { duration: 'Senior Membership (3 years)', fee: 'INR 12,000/-', note: 'Merit-based' },
+  { duration: 'Annual', fee: 'NT$1,500', note: 'Collaborator' },
+  { duration: 'Long Term (3 years)', fee: 'NT$4,000', note: 'Collaborator' },
+  { duration: 'Long Term (5 years)', fee: 'NT$6,000', note: 'Collaborator' },
+  { duration: 'Senior Membership (3 years)', fee: 'NT$12,000', note: 'Merit-based' },
   { duration: 'Fellow Membership', fee: 'By nomination', note: 'Merit-based' },
+]
+
+export const objectives = [
+  'Conduct world-class research in AI and cybersecurity that leads to high-quality publications, patents, products, and security solutions.',
+  'Train students to become security professionals who can serve government, academia, and industry.',
+  'Combine data science and artificial intelligence with cyber risk, threat intelligence, attack detection, situational awareness, and incubation.',
+  'Host international conferences and seminars on artificial intelligence and cybersecurity.',
+  'Provide a training environment for graduate and post-doctoral researchers pursuing careers in security.',
+  'Establish world-class facilities for managing cyber risk, innovation, product development, collaboration with critical infrastructure, and information sharing.',
+  'Help Taiwan’s security and automation industries grow by incubating, recruiting, and training researchers in AI and cybersecurity.',
 ]
 
 export const heroSlides = [
@@ -59,6 +72,10 @@ export const researchAreas = [
     text: 'Network security, threat hunting, and resilient digital infrastructure.',
   },
   {
+    title: 'Threat intelligence',
+    text: 'Cyber risk, attack detection, and situational awareness for real-world defence.',
+  },
+  {
     title: 'Secure machine learning',
     text: 'Adversarial robustness, model integrity, and privacy-preserving AI.',
   },
@@ -67,19 +84,23 @@ export const researchAreas = [
     text: 'Modern cryptography, data protection, and confidential computing.',
   },
   {
-    title: 'Digital forensics',
-    text: 'Incident response, evidence analysis, and cyber crime investigation.',
-  },
-  {
-    title: 'AI for security',
-    text: 'Intelligent detection, automated response, and cyber situational awareness.',
+    title: 'Incubation & innovation',
+    text: 'Security products, patents, and support for AI and cybersecurity ventures.',
   },
 ]
 
 export const conferences = [
   {
+    title: '3rd International Conference on Smart System & Advanced Computing (SysCom 2026)',
+    venue: 'Asia University, Taichung, Taiwan',
+    dates: '19–20 December 2026',
+    mode: 'In-person',
+    blurb:
+      'AI, machine learning, smart systems, cybersecurity, IoT, and advanced computing, hosted at Asia University with support of ACRS and CCRI.',
+  },
+  {
     title: 'International Conference on AI Security and Trust (ICAST 2026)',
-    venue: 'New Delhi, India',
+    venue: 'Asia University, Taichung, Taiwan',
     dates: '14–15 August 2026',
     mode: 'Hybrid',
     blurb:
@@ -87,7 +108,7 @@ export const conferences = [
   },
   {
     title: 'International Conference on Cyber Intelligence and Defence (ICCID 2026)',
-    venue: 'Bengaluru, India',
+    venue: 'Taipei, Taiwan',
     dates: '9–10 October 2026',
     mode: 'Hybrid',
     blurb:
@@ -95,31 +116,23 @@ export const conferences = [
   },
   {
     title: 'Congress on Secure Intelligent Systems (CSIS 2026)',
-    venue: 'Hyderabad, India',
+    venue: 'Taichung, Taiwan',
     dates: '5–6 September 2026',
     mode: 'In-person and online',
     blurb:
-      'A congress on intelligent systems that remain secure under attack, jointly organized with ACRS.',
+      'A congress on intelligent systems that remain secure under attack, jointly organized with ACRS and CCRI.',
   },
   {
     title: 'International Conference on Privacy, Cryptography and AI (IPCAI 2026)',
-    venue: 'Mumbai, India',
+    venue: 'Kaohsiung, Taiwan',
     dates: '29–30 August 2026',
     mode: 'Hybrid',
     blurb:
       'Privacy-preserving machine learning, cryptography, and confidential computing in association with ACRS.',
   },
   {
-    title: 'International Conference on Digital Forensics and Incident Response (DFIR 2026)',
-    venue: 'Dehradun, India',
-    dates: '12–13 June 2026',
-    mode: 'Hybrid',
-    blurb:
-      'Forensics, malware analysis, and incident response for researchers and practitioners, with ACRS association.',
-  },
-  {
     title: 'Workshop on Adversarial Machine Learning and Cyber Resilience (AMLCR 2026)',
-    venue: 'Goa, India',
+    venue: 'Asia University, Taichung, Taiwan',
     dates: '26–27 September 2026',
     mode: 'Hybrid',
     blurb:

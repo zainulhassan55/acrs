@@ -1,4 +1,5 @@
 import { PageHero } from '../components/Layout'
+import { objectives, society } from '../content'
 import { publicUrl } from '../publicUrl'
 
 export function AboutPage() {
@@ -7,38 +8,42 @@ export function AboutPage() {
       <PageHero
         kicker="About ACRS"
         title="A society for research that is intelligent and secure"
-        subtitle="The AI & Cybersecurity Research Society (ACRS) is established to promote research in artificial intelligence, cybersecurity, and the technologies that connect them, with headquarters in Delhi, India."
+        subtitle="The AI & Cybersecurity Research Society (ACRS) is established to promote research in artificial intelligence, cybersecurity, and the technologies that connect them, with headquarters in Taichung, Taiwan."
         image="/images/hero-ai-cyber.png"
       />
 
       <section className="mx-auto max-w-7xl px-5 py-20">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <article className="glass rounded-[2rem] p-10">
-            <h2 className="headline text-4xl text-white">About the society</h2>
-            <p className="mt-6 text-lg leading-8 text-fog/80">
-              AI & Cybersecurity Research Society is a non-profit scientific community of
-              institutions, labs, researchers, scientists, academicians, research scholars,
-              students, and industry R&amp;D professionals interested in AI, cybersecurity, and
-              related technologies.
-            </p>
-            <p className="mt-5 text-lg leading-8 text-fog/80">
-              ACRS serves as a platform for collaboration through international conferences, a
-              technology magazine, student chapters, and the ACRS Fellow membership. These
-              initiatives help share technological advancements and drive progress across the
-              global research community.
-            </p>
-          </article>
-          <article className="glass rounded-[2rem] p-10">
-            <h2 className="headline text-4xl text-white">Objectives</h2>
-            <p className="mt-6 text-lg leading-8 text-fog/80">
-              The primary objective of the society is to support and promote research in
-              artificial intelligence, cybersecurity, secure machine learning, privacy, and
-              related areas. ACRS organizes lectures, workshops, seminars, and conferences to
-              guide young researchers working on intelligent and secure systems. The society also
-              sponsors academic trips of young researchers.
-            </p>
-          </article>
-        </div>
+        <article className="glass rounded-[2rem] p-10">
+          <h2 className="headline text-4xl text-white">About the society</h2>
+          <p className="mt-6 text-lg leading-8 text-fog/80">
+            AI & Cybersecurity Research Society is a scientific community of institutions, labs,
+            researchers, scientists, academicians, research scholars, students, and industry
+            professionals interested in AI, cybersecurity, and related technologies. ACRS works
+            in close association with the {society.lab}.
+          </p>
+          <p className="mt-5 text-lg leading-8 text-fog/80">
+            ACRS serves as a platform for collaboration through international conferences,
+            student chapters, incubation, and the ACRS Fellow membership. These initiatives
+            help share technological advancements and drive progress across the global research
+            community.
+          </p>
+        </article>
+
+        <article className="glass mt-8 rounded-[2rem] p-10">
+          <h2 className="headline text-4xl text-white">Objectives</h2>
+          <p className="mt-6 text-lg leading-8 text-fog/80">
+            Cyber events continue to escalate in frequency and severity. ACRS is established to
+            conduct world-class AI and cybersecurity research, and to train the next generation
+            of security professionals.
+          </p>
+          <ul className="mt-6 grid gap-4 text-lg leading-8 text-fog/80 md:grid-cols-2">
+            {objectives.map((item) => (
+              <li key={item} className="rounded-2xl border border-line p-5">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </article>
 
         <article className="glass mt-8 rounded-[2rem] p-10">
           <h2 className="headline text-4xl text-white">About the logo</h2>
