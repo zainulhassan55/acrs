@@ -7,7 +7,7 @@ export function FellowPage() {
     <>
       <PageHero
         kicker="Merit recognition"
-        title="ACRS Fellow"
+        title="GIDIS Fellow"
         subtitle="A prestigious recognition for academicians, scholars, and industry professionals with exceptional contributions in artificial intelligence, cybersecurity, and secure intelligent systems."
         image="/images/hero-defence.png"
       />
@@ -15,14 +15,14 @@ export function FellowPage() {
       <section className="mx-auto max-w-7xl space-y-10 px-5 py-20">
         <article className="glass rounded-[2rem] p-10">
           <p className="text-lg leading-8 text-fog/80">
-            The AI & Cybersecurity Research Society (ACRS) is a non-profit for members from
-            academia and industry. It is a platform for institutions, labs, researchers,
-            scientists, scholars, students, and professionals passionate about artificial
-            intelligence, cybersecurity, and secure computing.
+            The Global Institute for Digital Intelligence and Security (GIDIS) is a global
+            institute for members from academia and industry. It is a platform for institutions,
+            labs, researchers, scientists, scholars, students, and professionals passionate about
+            artificial intelligence, cybersecurity, and secure computing.
           </p>
           <p className="mt-5 text-lg leading-8 text-fog/80">
-            ACRS fosters collaboration through international conferences, the ACRS Insights
-            technology magazine, and the ACRS Fellow membership.
+            GIDIS fosters collaboration through international conferences, the GIDIS Insights
+            technology magazine, and the GIDIS Fellow membership.
           </p>
         </article>
 
@@ -67,7 +67,7 @@ export function FellowPage() {
             {[
               {
                 title: 'Rights and privileges',
-                text: 'Permission to use the designation “Fellow ACRS”, “ACRS Fellow”, or “F-ACRS” in email signatures, business cards, letterheads, and similar materials. Priority consideration for articles in ACRS Insights.',
+                text: 'Permission to use the designation “Fellow GIDIS”, “GIDIS Fellow”, or “F-GIDIS” in email signatures, business cards, letterheads, and similar materials. Priority consideration for articles in GIDIS Insights.',
               },
               {
                 title: 'Global recognition',
@@ -76,7 +76,7 @@ export function FellowPage() {
               { title: 'Professional networking', text: 'Connect with researchers, CISOs, AI scientists, and innovators working on intelligent and secure systems.' },
               {
                 title: 'Leadership roles',
-                text: 'Become eligible for leadership positions within ACRS and help shape the future of research and development.',
+                text: 'Become eligible for leadership positions within GIDIS and help shape the future of research and development.',
               },
             ].map((item) => (
               <div key={item.title}>
@@ -93,7 +93,7 @@ export function FellowPage() {
             <li>
               <strong className="text-white">1. Call for nominations.</strong> Eligible candidates
               may nominate themselves. Applicants must enter the name and email of one referee.
-              One reference is mandatory from: an existing ACRS Fellow; a teaching faculty member
+              One reference is mandatory from: an existing GIDIS Fellow; a teaching faculty member
               from any university; the applicant’s Vice-Chancellor, Director, or Manager (for
               industry applicants); or a Fellow of any other recognized organization.
             </li>
@@ -106,7 +106,7 @@ export function FellowPage() {
               and industry reviews each application. This may take 2–4 weeks after screening.
             </li>
             <li>
-              <strong className="text-white">4. Final approval.</strong> The ACRS governing body
+              <strong className="text-white">4. Final approval.</strong> The GIDIS governing body
               makes the final decision based on expert review comments.
             </li>
           </ol>
@@ -128,7 +128,7 @@ export function FellowPage() {
             .
           </p>
           <p className="mt-5 text-lg leading-8 text-fog/65">
-            ACRS Fellow members are expected to remain a small share of total membership, and
+            GIDIS Fellow members are expected to remain a small share of total membership, and
             Distinguished Fellows a smaller share of Fellows, preserving the standing of the
             honour.
           </p>

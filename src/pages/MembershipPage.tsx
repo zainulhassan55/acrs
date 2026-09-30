@@ -17,8 +17,8 @@ export function MembershipPage() {
     <>
       <PageHero
         kicker="Membership"
-        title="Join ACRS"
-        subtitle="Anyone aged 18 or more, or studying for an undergraduate degree, can join the AI & Cybersecurity Research Society as a collaborator and take part in its research community."
+        title="Join GIDIS"
+        subtitle="Anyone aged 18 or more, or studying for an undergraduate degree, can join the Global Institute for Digital Intelligence and Security as a collaborator and take part in its research community."
         image="/images/hero-ai-cyber.png"
       />
 
@@ -35,9 +35,9 @@ export function MembershipPage() {
         <div>
           <h2 className="headline text-4xl text-white md:text-5xl">Fee structure</h2>
           <p className="mt-5 max-w-4xl text-lg leading-8 text-fog/80">
-            Researchers can join the society in the following categories. Fees are listed in New
+            Researchers can join the institute in the following categories. Fees are listed in New
             Taiwan Dollars (NT$) and may be paid online, by credit card, or by bank transfer to
-            the society’s account.
+            the institute’s account.
           </p>
           <div className="mt-8 overflow-x-auto rounded-[2rem] border border-line">
             <table className="w-full min-w-[640px] text-left text-lg">
@@ -65,15 +65,15 @@ export function MembershipPage() {
           <article className="rounded-[2rem] border border-line p-10">
             <h2 className="headline text-4xl text-white">Terms and conditions</h2>
             <ul className="mt-8 space-y-4 text-lg leading-8 text-fog/80">
-              <li>Every collaborator of ACRS will work as per the aims and objectives of the society.</li>
+              <li>Every collaborator of GIDIS will work as per the aims and objectives of the institute.</li>
               <li>A claim for refund of the fee is not possible in any case.</li>
               <li>
                 The core committee has the right to accept or reject anybody’s application for
-                association with ACRS.
+                association with GIDIS.
               </li>
               <li>
                 The core committee can debar any member if found working against the aims and
-                objectives of the society. The decision of the core committee will not be
+                objectives of the institute. The decision of the core committee will not be
                 questioned.
               </li>
             </ul>

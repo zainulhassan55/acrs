@@ -8,7 +8,7 @@ export function Logo({ className = 'h-12 w-12' }: LogoProps) {
   return (
     <img
       src={publicUrl('logo.png')}
-      alt="AI & Cybersecurity Research Society"
+      alt="Global Institute for Digital Intelligence and Security"
       className={`rounded-[1.05rem] object-cover shadow-[0_0_24px_rgba(62,224,208,0.18)] ${className}`}
     />
   )

@@ -7,7 +7,7 @@ export function ConferencesPage() {
       <PageHero
         kicker="Events"
         title="AI & cybersecurity conferences"
-        subtitle="ACRS organizes and technically supports conferences, lectures, workshops, and seminars for researchers working in artificial intelligence, cybersecurity, privacy, and secure intelligent systems."
+        subtitle="GIDIS organizes and technically supports conferences, lectures, workshops, and seminars for researchers working in artificial intelligence, cybersecurity, privacy, and secure intelligent systems."
         image="/images/hero-defence.png"
       />
 

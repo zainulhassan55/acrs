@@ -19,30 +19,30 @@ export function HomePage() {
             <p className="inline-flex rounded-full border border-white/15 bg-ink/40 px-4 py-1.5 text-sm tracking-[0.22em] text-mint uppercase backdrop-blur-md">
               Artificial intelligence · Cyber defence · Research
             </p>
-            <h1 className="headline mt-7 text-5xl text-white sm:text-7xl lg:text-[5.4rem]">
-              AI & Cybersecurity
+            <h1 className="headline mt-7 text-4xl text-white sm:text-6xl lg:text-[4.6rem]">
+              Global Institute
               <span className="mt-2 block bg-gradient-to-r from-mint to-sky bg-clip-text text-transparent">
-                Research Society
+                for Digital Intelligence and Security
               </span>
             </h1>
             <p className="mt-5 font-serif text-3xl text-gold">{society.shortName}</p>
             <p className="mt-7 max-w-2xl text-xl leading-9 text-fog/90">
-              ACRS is a non-profit scientific society for institutions, labs, researchers,
-              scientists, academicians, scholars, students, and industry professionals working at
-              the meeting point of artificial intelligence and cybersecurity.
+              GIDIS is a global institute for institutions, labs, researchers, scientists,
+              academicians, scholars, students, and industry professionals working in digital
+              intelligence, artificial intelligence, and cybersecurity.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 to="/membership"
                 className="rounded-full bg-mint px-7 py-3.5 text-lg font-semibold text-ink"
               >
-                Join ACRS
+                Join GIDIS
               </Link>
               <Link
                 to="/about"
                 className="rounded-full border border-white/20 bg-ink/35 px-7 py-3.5 text-lg font-semibold text-white backdrop-blur-md hover:bg-white/10"
               >
-                Explore the society
+                Explore the institute
               </Link>
             </div>
           </div>
@@ -50,7 +50,7 @@ export function HomePage() {
 
       <section className="border-y border-line bg-ink-2/80">
         <div className="mx-auto max-w-7xl px-5 py-8">
-          <p className="kicker mb-5">Navigate ACRS</p>
+          <p className="kicker mb-5">Navigate GIDIS</p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
             {quickNav.map((item) => (
               <Link
@@ -82,7 +82,7 @@ export function HomePage() {
           Built for AI and cybersecurity
         </h2>
         <p className="mt-6 max-w-3xl text-xl leading-9 text-fog/80">
-          ACRS exists to advance research where intelligent systems and digital security meet —
+          GIDIS exists to advance research where intelligent systems and digital security meet —
           from trustworthy AI to cyber defence, privacy, and forensics.
         </p>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -100,7 +100,7 @@ export function HomePage() {
           <div>
             <p className="kicker">Campus programme</p>
             <h2 className="headline mt-4 text-4xl text-white md:text-6xl">
-              ACRS Students’ Chapter
+              GIDIS Students’ Chapter
             </h2>
             <p className="mt-6 text-xl leading-9 text-fog/80">
               The Students’ Chapter helps universities and colleges teach AI, machine learning,
@@ -128,9 +128,9 @@ export function HomePage() {
         <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-sky/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-5 py-24">
           <p className="kicker">Recognition</p>
-          <h2 className="headline mt-4 max-w-3xl text-4xl text-white md:text-6xl">ACRS Fellow</h2>
+          <h2 className="headline mt-4 max-w-3xl text-4xl text-white md:text-6xl">GIDIS Fellow</h2>
           <p className="mt-6 max-w-4xl text-xl leading-9 text-fog/80">
-            ACRS Fellow is awarded to academicians, scholars, and industry professionals with
+            GIDIS Fellow is awarded to academicians, scholars, and industry professionals with
             exceptional contributions in artificial intelligence, cybersecurity, secure systems,
             and related technologies.
           </p>
@@ -145,7 +145,7 @@ export function HomePage() {
               to="/contact"
               className="rounded-full border border-line px-7 py-3.5 text-lg font-semibold text-white"
             >
-              We are looking for ACRS Fellow Assessors
+              We are looking for GIDIS Fellow Assessors
             </Link>
           </div>
         </div>

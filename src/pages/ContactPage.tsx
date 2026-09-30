@@ -18,7 +18,7 @@ export function ContactPage() {
       <PageHero
         kicker="Contact"
         title="Contact us"
-        subtitle="Write to the AI & Cybersecurity Research Society for membership, student chapters, fellow nominations, conferences, and general queries."
+        subtitle="Write to the Global Institute for Digital Intelligence and Security for membership, student chapters, fellow nominations, conferences, and general queries."
         image="/images/hero-secure-ai.png"
       />
 
@@ -31,8 +31,6 @@ export function ContactPage() {
           <a className="mt-2 block text-2xl text-mint" href={`mailto:${society.emails[0]}`}>
             {society.emails[0]}
           </a>
-          <p className="mt-8 text-base tracking-[0.18em] text-fog/55 uppercase">Phone</p>
-          <p className="mt-2 text-2xl text-white">{society.phone}</p>
           <p className="mt-8 text-lg leading-8 text-fog/75">
             Headquarters: {society.hq}. For conference-related involvement, please visit the
             conferences page or include the event name in your message.
@@ -43,7 +41,7 @@ export function ContactPage() {
           <h2 className="headline text-4xl text-white">Send a message</h2>
           {sent ? (
             <p className="mt-8 text-lg leading-8 text-mint">
-              Thank you. Your message has been recorded. The ACRS team will respond by email.
+              Thank you. Your message has been recorded. The GIDIS team will respond by email.
             </p>
           ) : (
             <form className="mt-8 grid gap-5" onSubmit={onSubmit}>

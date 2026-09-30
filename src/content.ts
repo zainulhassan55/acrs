@@ -1,21 +1,20 @@
 export const society = {
-  shortName: 'ACRS',
-  name: 'AI & Cybersecurity Research Society',
-  fullTitle: 'AI & Cybersecurity Research Society (ACRS)',
+  shortName: 'GIDIS',
+  name: 'Global Institute for Digital Intelligence and Security',
+  fullTitle: 'Global Institute for Digital Intelligence and Security (GIDIS)',
   hq: 'Taichung, Taiwan',
   lab: 'International Center for AI and Cyber Security Research and Innovations (CCRI), Asia University',
   address:
     'CCRI, Asia University, No. 500, Lioufeng Rd., Wufeng Dist., Taichung City 41354, Taiwan',
   emails: ['director-ccri@asia.edu.tw'],
-  phone: '+886-4-2332-3456',
 }
 
 export const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/students', label: 'Students Chapter' },
-  { to: '/fellow', label: 'ACRS Fellow' },
-  { to: '/membership', label: 'Join ACRS' },
+  { to: '/fellow', label: 'GIDIS Fellow' },
+  { to: '/membership', label: 'Join GIDIS' },
   { to: '/conferences', label: 'Conferences' },
   { to: '/contact', label: 'Contact' },
 ]
@@ -44,7 +43,7 @@ export const heroSlides = [
     title: 'Trustworthy AI',
     text: 'Research that makes intelligent systems reliable, explainable, and safe.',
     to: '/about',
-    label: 'About ACRS',
+    label: 'About GIDIS',
   },
   {
     src: 'images/hero-secure-ai.png',
@@ -96,7 +95,7 @@ export const conferences = [
     dates: '19–20 December 2026',
     mode: 'In-person',
     blurb:
-      'AI, machine learning, smart systems, cybersecurity, IoT, and advanced computing, hosted at Asia University with support of ACRS and CCRI.',
+      'AI, machine learning, smart systems, cybersecurity, IoT, and advanced computing, hosted at Asia University with support of GIDIS and CCRI.',
   },
   {
     title: 'International Conference on AI Security and Trust (ICAST 2026)',
@@ -104,7 +103,7 @@ export const conferences = [
     dates: '14–15 August 2026',
     mode: 'Hybrid',
     blurb:
-      'A flagship ACRS conference on trustworthy AI, adversarial robustness, and secure intelligent systems.',
+      'A flagship GIDIS conference on trustworthy AI, adversarial robustness, and secure intelligent systems.',
   },
   {
     title: 'International Conference on Cyber Intelligence and Defence (ICCID 2026)',
@@ -112,7 +111,7 @@ export const conferences = [
     dates: '9–10 October 2026',
     mode: 'Hybrid',
     blurb:
-      'Threat intelligence, cyber operations, and AI-assisted defence, organized with technical support of ACRS.',
+      'Threat intelligence, cyber operations, and AI-assisted defence, organized with technical support of GIDIS.',
   },
   {
     title: 'Congress on Secure Intelligent Systems (CSIS 2026)',
@@ -120,7 +119,7 @@ export const conferences = [
     dates: '5–6 September 2026',
     mode: 'In-person and online',
     blurb:
-      'A congress on intelligent systems that remain secure under attack, jointly organized with ACRS and CCRI.',
+      'A congress on intelligent systems that remain secure under attack, jointly organized with GIDIS and CCRI.',
   },
   {
     title: 'International Conference on Privacy, Cryptography and AI (IPCAI 2026)',
@@ -128,7 +127,7 @@ export const conferences = [
     dates: '29–30 August 2026',
     mode: 'Hybrid',
     blurb:
-      'Privacy-preserving machine learning, cryptography, and confidential computing in association with ACRS.',
+      'Privacy-preserving machine learning, cryptography, and confidential computing in association with GIDIS.',
   },
   {
     title: 'Workshop on Adversarial Machine Learning and Cyber Resilience (AMLCR 2026)',
@@ -136,6 +135,6 @@ export const conferences = [
     dates: '26–27 September 2026',
     mode: 'Hybrid',
     blurb:
-      'A focused ACRS workshop on attacking and defending learning systems in real-world cyber environments.',
+      'A focused GIDIS workshop on attacking and defending learning systems in real-world cyber environments.',
   },
 ]

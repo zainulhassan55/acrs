@@ -17,8 +17,8 @@ export function Layout() {
               <span className="block font-display text-sm font-bold tracking-wide text-white">
                 {society.shortName}
               </span>
-              <span className="hidden text-[11px] text-fog/70 sm:block">
-                AI & Cybersecurity Research Society
+              <span className="hidden max-w-[14rem] text-[11px] leading-snug text-fog/70 sm:block">
+                Global Institute for Digital Intelligence and Security
               </span>
             </span>
           </Link>
@@ -90,8 +90,8 @@ export function Layout() {
               <p className="headline text-2xl font-semibold text-white">{society.fullTitle}</p>
             </div>
             <p className="mt-5 max-w-md text-lg leading-8 text-fog/75">
-              A non-profit scientific society for researchers, students, and industry professionals
-              working in artificial intelligence, cybersecurity, and allied areas.
+              A global institute for researchers, students, and industry professionals working in
+              digital intelligence, artificial intelligence, cybersecurity, and allied areas.
             </p>
           </div>
           <div>
@@ -109,7 +109,6 @@ export function Layout() {
             <p className="mt-5 text-lg leading-8 text-fog/75">{society.lab}</p>
             <p className="mt-3 text-lg leading-8 text-fog/75">{society.address}</p>
             <p className="mt-4 text-xl text-mint">{society.emails[0]}</p>
-            <p className="mt-2 text-lg text-fog/75">{society.phone}</p>
           </div>
         </div>
         <div className="border-t border-line py-6 text-center text-sm text-fog/45">

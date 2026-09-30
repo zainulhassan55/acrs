@@ -5,9 +5,9 @@ import { society } from '../content'
 const guidelines = [
   'Universities and colleges are eligible to establish a student chapter for programmes such as Bachelor’s / Master’s degrees in Computer Science, Artificial Intelligence, Data Science, Cybersecurity, and related fields.',
   'For each student chapter, there must be one faculty adviser who will be a single point of contact (SPOC). The department will initiate the request to establish the student chapter with the name of a faculty adviser.',
-  'ACRS authorities will approve the request for student chapter establishment after verification.',
+  'GIDIS authorities will approve the request for student chapter establishment after verification.',
   'The SPOC will coordinate the registration of all students of the programme or course for which the chapter is being established.',
-  'Students may deposit the fee directly using the registration link shared by the SPOC. Alternatively, the SPOC can collect the fee and relevant details and then deposit the same to the ACRS account.',
+  'Students may deposit the fee directly using the registration link shared by the SPOC. Alternatively, the SPOC can collect the fee and relevant details and then deposit the same to the GIDIS account.',
   'A minimum of 100 students is required to initiate a chapter.',
 ]
 
@@ -18,11 +18,11 @@ const benefits = [
   },
   {
     title: 'Awareness of industry trends',
-    text: 'ACRS Students’ Chapter activities keep students up to date on industry trends, best practices, and challenges.',
+    text: 'GIDIS Students’ Chapter activities keep students up to date on industry trends, best practices, and challenges.',
   },
   {
     title: 'Fee subsidy',
-    text: 'SPOC and registered students can receive discounts on registration fees for ACRS programmes, including conferences, workshops, and seminars.',
+    text: 'SPOC and registered students can receive discounts on registration fees for GIDIS programmes, including conferences, workshops, and seminars.',
   },
   {
     title: 'Professional growth',
@@ -43,7 +43,7 @@ export function StudentsPage() {
     <>
       <PageHero
         kicker="Campus programme"
-        title="ACRS Students’ Chapter"
+        title="GIDIS Students’ Chapter"
         subtitle="A collaborative programme for universities and colleges to teach artificial intelligence, cybersecurity, and secure computing — and to bridge academia with industry."
         image="/images/hero-secure-ai.png"
       />
@@ -94,11 +94,11 @@ export function StudentsPage() {
             </li>
             <li>
               Students associated with the chapter will be eligible to pursue certification courses
-              offered by ACRS at a concessional fee.
+              offered by GIDIS at a concessional fee.
             </li>
             <li>
               Departments may organize academic events under the student chapter. Information about
-              these events will be shared with ACRS members and published on the website. At the
+              these events will be shared with GIDIS members and published on the website. At the
               end of each year, a best chapter award will be presented.
             </li>
             <li>
