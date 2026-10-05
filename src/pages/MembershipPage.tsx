@@ -1,16 +1,34 @@
 import { useState, type FormEvent } from 'react'
 import { PageHero } from '../components/Layout'
 import { membershipPlans } from '../content'
+import { submitMembership } from '../api'
 
 const fieldClass =
   'rounded-2xl border border-line bg-ink px-5 py-4 text-lg text-white outline-none focus:border-mint'
 
 export function MembershipPage() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    setSent(true)
+    const data = new FormData(event.currentTarget)
+    setError('')
+    setLoading(true)
+    try {
+      await submitMembership({
+        name: String(data.get('name') || ''),
+        email: String(data.get('email') || ''),
+        affiliation: String(data.get('affiliation') || ''),
+        category: String(data.get('category') || ''),
+      })
+      setSent(true)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Could not submit registration.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -87,8 +105,8 @@ export function MembershipPage() {
             <h2 className="headline text-4xl text-white">Register</h2>
             {sent ? (
               <p className="mt-8 text-lg leading-8 text-mint">
-                Thank you. Your registration request has been recorded. Please watch your email
-                for a verification link, then log in and apply.
+                Thank you. Your registration request has been recorded. The GIDIS team will review
+                it and follow up by email.
               </p>
             ) : (
               <form className="mt-8 grid gap-5" onSubmit={onSubmit}>
@@ -114,11 +132,13 @@ export function MembershipPage() {
                     ))}
                   </select>
                 </label>
+                {error ? <p className="text-base text-red-300">{error}</p> : null}
                 <button
                   type="submit"
-                  className="mt-2 rounded-full bg-mint px-7 py-3.5 text-lg font-semibold text-ink"
+                  disabled={loading}
+                  className="mt-2 rounded-full bg-mint px-7 py-3.5 text-lg font-semibold text-ink disabled:opacity-60"
                 >
-                  Submit registration
+                  {loading ? 'Submitting…' : 'Submit registration'}
                 </button>
               </form>
             )}

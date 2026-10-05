@@ -1,16 +1,34 @@
 import { useState, type FormEvent } from 'react'
 import { PageHero } from '../components/Layout'
 import { society } from '../content'
+import { submitContact } from '../api'
 
 const fieldClass =
   'rounded-2xl border border-line bg-ink px-5 py-4 text-lg text-white outline-none focus:border-mint'
 
 export function ContactPage() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    setSent(true)
+    const form = event.currentTarget
+    const data = new FormData(form)
+    setError('')
+    setLoading(true)
+    try {
+      await submitContact({
+        name: String(data.get('name') || ''),
+        email: String(data.get('email') || ''),
+        message: String(data.get('message') || ''),
+      })
+      setSent(true)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Could not send the message.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -57,11 +75,13 @@ export function ContactPage() {
                 <span className="text-fog/70">Message</span>
                 <textarea required name="message" rows={6} className={fieldClass} />
               </label>
+              {error ? <p className="text-base text-red-300">{error}</p> : null}
               <button
                 type="submit"
-                className="rounded-full bg-mint px-7 py-3.5 text-lg font-semibold text-ink"
+                disabled={loading}
+                className="rounded-full bg-mint px-7 py-3.5 text-lg font-semibold text-ink disabled:opacity-60"
               >
-                Send message
+                {loading ? 'Sending…' : 'Send message'}
               </button>
             </form>
           )}
