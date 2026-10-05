@@ -1,82 +1,22 @@
-import { useState } from 'react'
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import { Logo } from './Logo'
-import { nav, society } from '../content'
+import { Navbar } from './Navbar'
+import { society } from '../content'
 import { publicUrl } from '../publicUrl'
 
-export function Layout() {
-  const [open, setOpen] = useState(false)
+const footerLinks = [
+  { to: '/about', label: 'About GIDIS' },
+  { to: '/membership', label: 'Membership' },
+  { to: '/chapters', label: 'Chapters' },
+  { to: '/events/conferences', label: 'Conferences' },
+  { to: '/recognition/fellows', label: 'Fellows' },
+  { to: '/contact', label: 'Contact' },
+]
 
+export function Layout() {
   return (
     <div className="mesh min-h-screen text-fog">
-      <header className="nav-blur sticky top-0 z-50">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
-          <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <Logo />
-            <span className="leading-tight">
-              <span className="block font-display text-sm font-bold tracking-wide text-white">
-                {society.shortName}
-              </span>
-              <span className="hidden max-w-[14rem] text-[11px] leading-snug text-fog/70 sm:block">
-                Global Institute for Digital Intelligence and Security
-              </span>
-            </span>
-          </Link>
-
-          <nav className="hidden items-center gap-1 lg:flex">
-            {nav.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                end={item.to === '/'}
-                className={({ isActive }) =>
-                  `rounded-full px-3 py-2 text-sm transition ${
-                    isActive
-                      ? 'bg-white/10 text-white'
-                      : 'text-fog/75 hover:bg-white/5 hover:text-white'
-                  }`
-                }
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </nav>
-
-          <Link
-            to="/membership"
-            className="hidden rounded-full bg-mint px-4 py-2 text-sm font-semibold text-ink shadow-[0_0_24px_rgba(62,224,208,0.25)] lg:inline-flex"
-          >
-            Register
-          </Link>
-
-          <button
-            type="button"
-            className="rounded-lg border border-line px-3 py-2 text-sm text-white lg:hidden"
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Toggle menu"
-          >
-            Menu
-          </button>
-        </div>
-
-        {open && (
-          <div className="border-t border-line px-5 py-4 lg:hidden">
-            <div className="flex flex-col gap-1">
-              {nav.map((item) => (
-                <NavLink
-                  key={item.to}
-                  to={item.to}
-                  end={item.to === '/'}
-                  onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2 text-sm text-fog hover:bg-white/5"
-                >
-                  {item.label}
-                </NavLink>
-              ))}
-            </div>
-          </div>
-        )}
-      </header>
+      <Navbar />
 
       <main>
         <Outlet />
@@ -90,14 +30,15 @@ export function Layout() {
               <p className="headline text-2xl font-semibold text-white">{society.fullTitle}</p>
             </div>
             <p className="mt-5 max-w-md text-lg leading-8 text-fog/75">
-              A global institute for researchers, students, and industry professionals working in
-              digital intelligence, artificial intelligence, cybersecurity, and allied areas.
+              An international professional institute advancing research, education, collaboration,
+              and professional development in digital intelligence, cybersecurity, and related
+              areas.
             </p>
           </div>
           <div>
             <p className="kicker">Explore</p>
             <div className="mt-5 grid gap-3 text-lg text-fog/75">
-              {nav.map((item) => (
+              {footerLinks.map((item) => (
                 <Link key={item.to} to={item.to} className="hover:text-mint">
                   {item.label}
                 </Link>
@@ -144,9 +85,9 @@ export function PageHero({
       ) : (
         <div className="grid-fade pointer-events-none absolute inset-0 opacity-70" />
       )}
-      <div className="relative mx-auto max-w-7xl px-5 py-24 md:py-32">
+      <div className="relative mx-auto max-w-7xl px-5 py-20 md:py-28">
         <p className="kicker">{kicker}</p>
-        <h1 className="headline mt-5 max-w-4xl text-5xl font-semibold text-white md:text-7xl">
+        <h1 className="headline mt-5 max-w-4xl text-4xl font-semibold text-white md:text-6xl">
           {title}
         </h1>
         <p className="mt-6 max-w-3xl text-xl leading-9 text-fog/80">{subtitle}</p>

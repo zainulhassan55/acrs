@@ -6,8 +6,8 @@ export function ConferencesPage() {
     <>
       <PageHero
         kicker="Events"
-        title="AI & cybersecurity conferences"
-        subtitle="GIDIS organizes and technically supports conferences, lectures, workshops, and seminars for researchers working in artificial intelligence, cybersecurity, privacy, and secure intelligent systems."
+        title="Conferences"
+        subtitle="GIDIS organizes and technically supports scholarly conferences, workshops, and seminars in digital intelligence, cybersecurity, and related fields."
         image="/images/hero-defence.png"
       />
 
@@ -26,6 +26,7 @@ export function ConferencesPage() {
                 <span>{event.venue}</span>
               </div>
               <h2 className="headline mt-4 text-3xl text-white md:text-4xl">{event.title}</h2>
+              <p className="mt-3 text-base text-mint">{event.support}</p>
               <p className="mt-4 max-w-4xl text-lg leading-8 text-fog/80">{event.blurb}</p>
             </article>
           ))}

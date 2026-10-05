@@ -19,6 +19,25 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+button,
+summary,
+[role='button'],
+label[for],
+select,
+input[type='submit'],
+input[type='button'],
+input[type='checkbox'],
+input[type='radio'] {
+  cursor: pointer;
+}
+
+button:disabled,
+a[aria-disabled='true'],
+input:disabled {
+  cursor: not-allowed;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -79,6 +98,16 @@ body {
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--color-mint);
+}
+
+.card-surface {
+  background: linear-gradient(180deg, rgba(22, 44, 68, 0.55), rgba(12, 28, 46, 0.42));
+  border: 1px solid rgba(126, 198, 255, 0.16);
+  border-radius: 1.4rem;
+}
+
+.prose-acrs p {
+  margin: 0;
 }
 
 .lift {

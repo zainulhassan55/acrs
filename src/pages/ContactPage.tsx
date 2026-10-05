@@ -36,7 +36,7 @@ export function ContactPage() {
       <PageHero
         kicker="Contact"
         title="Contact us"
-        subtitle="Write to the Global Institute for Digital Intelligence and Security for membership, student chapters, fellow nominations, conferences, and general queries."
+        subtitle="Write to GIDIS for membership, chapters, fellowships, conferences, technical sponsorship, and general enquiries."
         image="/images/hero-secure-ai.png"
       />
 

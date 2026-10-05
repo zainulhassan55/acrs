@@ -35,8 +35,8 @@ export function MembershipPage() {
     <>
       <PageHero
         kicker="Membership"
-        title="Join GIDIS"
-        subtitle="Anyone aged 18 or more, or studying for an undergraduate degree, can join the Global Institute for Digital Intelligence and Security as a collaborator and take part in its research community."
+        title="Apply for Membership"
+        subtitle="Complete this form to request Student or Professional membership, or to be considered for a merit-based grade. GIDIS will review applications and follow up by email."
         image="/images/hero-ai-cyber.png"
       />
 
@@ -61,9 +61,9 @@ export function MembershipPage() {
             <table className="w-full min-w-[640px] text-left text-lg">
               <thead className="bg-white/5 text-fog/70">
                 <tr>
-                  <th className="px-6 py-5 font-medium">Duration</th>
-                  <th className="px-6 py-5 font-medium">Fee</th>
                   <th className="px-6 py-5 font-medium">Category</th>
+                  <th className="px-6 py-5 font-medium">Fee</th>
+                  <th className="px-6 py-5 font-medium">Notes</th>
                 </tr>
               </thead>
               <tbody>
@@ -83,16 +83,15 @@ export function MembershipPage() {
           <article className="rounded-[2rem] border border-line p-10">
             <h2 className="headline text-4xl text-white">Terms and conditions</h2>
             <ul className="mt-8 space-y-4 text-lg leading-8 text-fog/80">
-              <li>Every collaborator of GIDIS will work as per the aims and objectives of the institute.</li>
-              <li>A claim for refund of the fee is not possible in any case.</li>
+              <li>Members of GIDIS are expected to support the aims, mission, and professional standards of the Institute.</li>
+              <li>Membership fees, once paid, are not refundable except as provided in the published refund policy.</li>
               <li>
-                The core committee has the right to accept or reject anybody’s application for
-                association with GIDIS.
+                The Governing Council may accept or decline an application in accordance with the
+                membership bylaws.
               </li>
               <li>
-                The core committee can debar any member if found working against the aims and
-                objectives of the institute. The decision of the core committee will not be
-                questioned.
+                Membership may be withdrawn if a member is found to act against the Institute’s
+                aims, ethics, or professional conduct policy.
               </li>
             </ul>
             <p className="mt-8 text-base text-fog/55">
