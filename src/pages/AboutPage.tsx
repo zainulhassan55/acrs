@@ -1,5 +1,5 @@
 import { PageHero } from '../components/Layout'
-import { objectives, society } from '../content'
+import { objectives } from '../content'
 import { publicUrl } from '../publicUrl'
 
 export function AboutPage() {
@@ -19,7 +19,7 @@ export function AboutPage() {
             The Global Institute for Digital Intelligence and Security is a community of
             institutions, labs, researchers, scientists, academicians, research scholars,
             students, and industry professionals interested in AI, cybersecurity, and related
-            technologies. GIDIS works in close association with the {society.lab}.
+            technologies.
           </p>
           <p className="mt-5 text-lg leading-8 text-fog/80">
             GIDIS serves as a platform for collaboration through international conferences,

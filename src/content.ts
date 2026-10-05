@@ -3,10 +3,9 @@ export const society = {
   name: 'Global Institute for Digital Intelligence and Security',
   fullTitle: 'Global Institute for Digital Intelligence and Security (GIDIS)',
   hq: 'Taichung, Taiwan',
-  lab: 'International Center for AI and Cyber Security Research and Innovations (CCRI), Asia University',
   address:
-    'CCRI, Asia University, No. 500, Lioufeng Rd., Wufeng Dist., Taichung City 41354, Taiwan',
-  emails: ['director-ccri@asia.edu.tw'],
+    "13F.-2, No. 910, Sec. 2, Taiwan Blvd., He'an Vil., Xitun Dist., Taichung City 407, Taiwan",
+  emails: ['contact@gidis-edu.org'],
 }
 
 export const nav = [
@@ -91,15 +90,15 @@ export const researchAreas = [
 export const conferences = [
   {
     title: '3rd International Conference on Smart System & Advanced Computing (SysCom 2026)',
-    venue: 'Asia University, Taichung, Taiwan',
+    venue: 'Taichung, Taiwan',
     dates: '19–20 December 2026',
     mode: 'In-person',
     blurb:
-      'AI, machine learning, smart systems, cybersecurity, IoT, and advanced computing, hosted at Asia University with support of GIDIS and CCRI.',
+      'AI, machine learning, smart systems, cybersecurity, IoT, and advanced computing, hosted in Taichung with support of GIDIS.',
   },
   {
     title: 'International Conference on AI Security and Trust (ICAST 2026)',
-    venue: 'Asia University, Taichung, Taiwan',
+    venue: 'Taichung, Taiwan',
     dates: '14–15 August 2026',
     mode: 'Hybrid',
     blurb:
@@ -119,7 +118,7 @@ export const conferences = [
     dates: '5–6 September 2026',
     mode: 'In-person and online',
     blurb:
-      'A congress on intelligent systems that remain secure under attack, jointly organized with GIDIS and CCRI.',
+      'A congress on intelligent systems that remain secure under attack, organized with GIDIS.',
   },
   {
     title: 'International Conference on Privacy, Cryptography and AI (IPCAI 2026)',
@@ -131,7 +130,7 @@ export const conferences = [
   },
   {
     title: 'Workshop on Adversarial Machine Learning and Cyber Resilience (AMLCR 2026)',
-    venue: 'Asia University, Taichung, Taiwan',
+    venue: 'Taichung, Taiwan',
     dates: '26–27 September 2026',
     mode: 'Hybrid',
     blurb:

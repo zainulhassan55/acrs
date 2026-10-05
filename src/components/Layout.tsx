@@ -106,8 +106,7 @@ export function Layout() {
           </div>
           <div>
             <p className="kicker">Contact us</p>
-            <p className="mt-5 text-lg leading-8 text-fog/75">{society.lab}</p>
-            <p className="mt-3 text-lg leading-8 text-fog/75">{society.address}</p>
+            <p className="mt-5 text-lg leading-8 text-fog/75">{society.address}</p>
             <p className="mt-4 text-xl text-mint">{society.emails[0]}</p>
           </div>
         </div>
